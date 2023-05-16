@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <style>
+        body {
+            background-color: #131313;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            color: #fff;
+        }
+
+        .options {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+            font-weight: bold;
+        }
+
+        .option {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background-color: #ffb320;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .option:hover {
+            background-color: #d3900b;
+        }
+
+        .option-text {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hello admin</h1>
+        <div class="options">
+            <div class="option">
+                <a href="index.html">
+                    <div class="option-text">Browse Home Page</div>
+                </a>
+            </div>
+            <div class="option">
+                <a href="article-creator.html">
+                    <div class="option-text">Create Article</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

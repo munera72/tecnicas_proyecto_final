@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Article Creator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f1f1f1;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-container {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            max-width: 90%;
+        }
+
+        .form-container h1 {
+            margin-bottom: 20px;
+        }
+
+        .form-container form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-container form label {
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .form-container form input[type="text"],
+        .form-container form textarea {
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        .form-container form input[type="radio"] {
+            margin-right: 6px;
+        }
+
+        .form-container form button {
+            padding: 12px 20px;
+            background-color: #fbb710;
+            border: none;
+            border-radius: 4px;
+            color: #ffffff;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .back-link {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: #333333;
+            text-decoration: none;
+        }
+
+        .back-link i {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <a href="admin-opt.html" class="back-link"><i class="fa fa-arrow-left"></i>Back</a>
+    <div class="form-container">
+        <h1>Article Creator</h1>
+        <form>
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author" required>
+
+            <label for="image-path">Image Path:</label>
+            <input type="text" id="image-path" name="image-path">
+
+            <label for="category">Category:</label>
+            <div>
+                <input type="radio" id="category-game" name="category" value="game" checked>
+                <label for="category-game">Game</label>
+                <input type="radio" id="category-characters" name="category" value="characters">
+                <label for="category-characters">Characters</label>
+                <input type="radio" id="category-weapons" name="category" value="weapons">
+                <label for="category-weapons">Weapons</label>
+                <input type="radio" id="category-places" name="category" value="places">
+                <label for="category-places">Places</label>
+            </div>
+            <label for="content">Content:</label>
+            <textarea id="content" name="content" rows="6" required></textarea>
+
+            <button type="submit">Create Article</button>
+        </form>
+    </div>
+</body>
+</html>
+
+           
